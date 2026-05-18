@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EurekaBank"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ping: Esperando..."
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="#E8F5E9"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login: Esperando..."
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="#E3F2FD"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operaciones"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cuenta (ej: 00100001)"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etImporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Importe (ej: 500)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnDeposito"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Deposito"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnRetiro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Retiro"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMovimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Movimientos"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado aparecerá aquí..."
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="#F5F5F5"
+            android:minHeight="100dp" />
+
+    </LinearLayout>
+</ScrollView>
