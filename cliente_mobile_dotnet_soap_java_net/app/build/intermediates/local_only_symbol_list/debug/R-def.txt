@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+id btnCargarMovimientos
+id btnDeposito
+id btnLogin
+id btnLogout
+id btnRetiro
+id btnTransferir
+id etImporte
+id etPassword
+id etUsuario
+id ivTipo
+id rvMovimientos
+id spCuentaDestino
+id spCuentaOrigen
+id spnServidor
+id tvAccion
+id tvError
+id tvFecha
+id tvImporte
+id tvSaldo
+id tvStatus
+id tvTipo
+id tvUsuario
+layout activity_home
+layout activity_login
+layout item_movimiento
+style Theme.EurekaBank
