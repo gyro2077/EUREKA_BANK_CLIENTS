@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ec.edu.espe.eurekadesktop.controllers.MainController">
+    <AnchorPane style="-fx-background-color: #0F172A;">
+        <VBox alignment="CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" 
+              AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+            <VBox alignment="CENTER">
+                <Label text="MENÚ PRINCIPAL" textFill="WHITE" style="-fx-font-size: 28px; -fx-font-weight: bold;">
+                    <VBox.margin>
+                        <Insets bottom="50"/>
+                    </VBox.margin>
+                </Label>
+                
+                <Label fx:id="lblUsuario" textFill="#94A3B8" style="-fx-font-size: 14px;">
+                    <VBox.margin>
+                        <Insets bottom="30"/>
+                    </VBox.margin>
+                </Label>
+                
+                <Label fx:id="lblBackend" textFill="#64748B" style="-fx-font-size: 12px;">
+                    <VBox.margin>
+                        <Insets bottom="40"/>
+                    </VBox.margin>
+                </Label>
+                
+                <GridPane hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints minWidth="200"/>
+                        <ColumnConstraints minWidth="200"/>
+                    </columnConstraints>
+                    
+                    <Button fx:id="btnDeposito" text="DEPÓSITO" 
+                            style="-fx-background-color: #1E293B; -fx-text-fill: #22C55E; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-border-color: #22C55E; -fx-border-radius: 12; -fx-cursor: hand;"
+                            onAction="#handleDeposito" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <padding>
+                            <Insets top="30" bottom="30" left="40" right="40"/>
+                        </padding>
+                    </Button>
+                    
+                    <Button fx:id="btnConsulta" text="CONSULTA" 
+                            style="-fx-background-color: #1E293B; -fx-text-fill: #3B82F6; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-border-color: #3B82F6; -fx-border-radius: 12; -fx-cursor: hand;"
+                            onAction="#handleConsulta" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <padding>
+                            <Insets top="30" bottom="30" left="40" right="40"/>
+                        </padding>
+                    </Button>
+                    
+                    <Button fx:id="btnTransferencia" text="TRANSFERENCIA" 
+                            style="-fx-background-color: #1E293B; -fx-text-fill: #8B5CF6; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-border-color: #8B5CF6; -fx-border-radius: 12; -fx-cursor: hand;"
+                            onAction="#handleTransferencia" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <padding>
+                            <Insets top="30" bottom="30" left="40" right="40"/>
+                        </padding>
+                    </Button>
+                    
+                    <Button fx:id="btnSalir" text="SALIR" 
+                            style="-fx-background-color: #1E293B; -fx-text-fill: #EF4444; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-border-color: #EF4444; -fx-border-radius: 12; -fx-cursor: hand;"
+                            onAction="#handleSalir" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <padding>
+                            <Insets top="30" bottom="30" left="40" right="40"/>
+                        </padding>
+                    </Button>
+                </GridPane>
+            </VBox>
+        </VBox>
+    </AnchorPane>
+</StackPane>
