@@ -1,0 +1,65 @@
+/* Eureka Bank - Estilos Generales */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-background-color: #1E293B;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #64748B;
+    -fx-border-color: #334155;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #2563EB;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.table-view {
+    -fx-background-color: #FFFFFF;
+}
+
+.table-view .column-header {
+    -fx-background-color: #E2E8F0;
+    -fx-text-fill: black;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: black;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFFFFF;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #F1F5F9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2563EB;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #1E293B;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1E293B;
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #1E293B;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #334155;
+}

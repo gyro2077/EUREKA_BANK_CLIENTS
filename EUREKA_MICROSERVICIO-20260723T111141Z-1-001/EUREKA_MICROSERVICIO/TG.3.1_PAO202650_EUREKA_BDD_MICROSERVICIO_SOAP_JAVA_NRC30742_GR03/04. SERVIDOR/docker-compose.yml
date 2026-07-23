@@ -1,0 +1,28 @@
+services:
+  db_soap:
+    image: mysql:5.7
+    container_name: eurekabank_soap_db
+    command: --lower_case_table_names=1
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: eurekabank
+      MYSQL_USER: eureka
+      MYSQL_PASSWORD: admin
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api_soap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eurekabank_soap_api
+    ports:
+      - "8091:8080"
+    depends_on:
+      db_soap:
+        condition: service_healthy

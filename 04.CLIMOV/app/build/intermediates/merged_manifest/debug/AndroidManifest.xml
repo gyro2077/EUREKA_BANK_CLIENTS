@@ -23,7 +23,6 @@
         android:extractNativeLibs="false"
         android:icon="@android:drawable/ic_menu_compass"
         android:label="EurekaBank"
-        android:testOnly="true"
         android:theme="@style/Theme.EurekaBank"
         android:usesCleartextTraffic="true" >
         <activity

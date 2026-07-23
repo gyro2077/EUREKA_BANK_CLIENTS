@@ -1,0 +1,101 @@
+# ==========================================
+# EurekaBank - Arquitectura Microservicios
+# Global & Multi-Language .gitignore
+# ==========================================
+
+# Archivos Comprimidos, Documentos Pesados y Binarios
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+*.iso
+*.docx
+*.pptx
+*.xlsx
+*.pdf
+*.dll
+*.exe
+*.pdb
+*.sws
+*.cache
+
+# ------------------------------------------
+# Web / Node.js (04. CLIWEB)
+# ------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.npm/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------
+# Java / Maven (04. CLIESC)
+# ------------------------------------------
+target/
+**/target/
+*.class
+*.war
+*.ear
+*.nar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ------------------------------------------
+# .NET / C# (Servidores & Servicios)
+# ------------------------------------------
+bin/
+**/bin/
+obj/
+**/obj/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# ------------------------------------------
+# Python (04.CLICON)
+# ------------------------------------------
+venv/
+**/venv/
+.venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ------------------------------------------
+# Android / Gradle (04.CLIMOV)
+# ------------------------------------------
+.gradle/
+**/.gradle/
+build/
+**/build/
+*.apk
+*.aab
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# ------------------------------------------
+# IDEs, Editores y Sistema Operativo
+# ------------------------------------------
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.orig

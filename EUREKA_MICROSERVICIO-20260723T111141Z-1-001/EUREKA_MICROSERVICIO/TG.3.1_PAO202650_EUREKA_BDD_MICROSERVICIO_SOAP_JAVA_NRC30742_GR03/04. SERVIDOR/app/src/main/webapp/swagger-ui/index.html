@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI - EurekaBank API</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+<div id="swagger-ui"></div>
+
+<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"> </script>
+<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js"> </script>
+<script>
+window.onload = function() {
+  // Payara Micro automatically exposes the OpenAPI spec at /openapi
+  const ui = SwaggerUIBundle({
+    url: "/openapi",
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout",
+    responseInterceptor: function(response) {
+      if(response.url.endsWith("/openapi")) {
+        try {
+          // Intentamos parsear como JSON (SwaggerUI suele pedir application/json)
+          const spec = JSON.parse(response.data);
+          spec.servers = [{ url: window.location.origin + "/" }];
+          response.data = JSON.stringify(spec);
+        } catch (e) {
+          // Si no es JSON, probamos el reemplazo YAML por si acaso
+          const yamlString = response.data;
+          response.data = yamlString.replace(/servers:[\s\S]*paths:/g, 'servers:\n- url: ' + window.location.origin + '/\npaths:');
+        }
+      }
+      return response;
+    }
+  })
+
+  window.ui = ui
+}
+</script>
+</body>
+</html>

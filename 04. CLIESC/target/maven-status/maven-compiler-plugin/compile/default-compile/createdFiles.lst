@@ -1,4 +1,5 @@
 ec/edu/espe/eurekadesktop/app/Main.class
+ec/edu/espe/eurekadesktop/services/rest/ServicioRestDotNet$1.class
 ec/edu/espe/eurekadesktop/services/rest/ServicioRestJava$LoginResponse.class
 ec/edu/espe/eurekadesktop/factory/ServicioFactory.class
 ec/edu/espe/eurekadesktop/models/Backend.class
@@ -21,7 +22,6 @@ ec/edu/espe/eurekadesktop/services/rest/ServicioRestJava$1.class
 ec/edu/espe/eurekadesktop/services/rest/ServicioRestJava$MovimientosResponse.class
 ec/edu/espe/eurekadesktop/utils/JsonUtils$1.class
 ec/edu/espe/eurekadesktop/services/rest/ServicioRestDotNet$LoginResponse.class
-ec/edu/espe/eurekadesktop/services/rest/ServicioRestDotNet$MovimientosResponse.class
 ec/edu/espe/eurekadesktop/services/interfaces/ServicioBancario.class
 ec/edu/espe/eurekadesktop/controllers/ConsultaController$1$1.class
 ec/edu/espe/eurekadesktop/utils/XmlUtils.class

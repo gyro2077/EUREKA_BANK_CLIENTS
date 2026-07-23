@@ -1,11 +1,11 @@
-#Mon May 18 19:21:24 ECT 2026
-base.0=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
-base.3=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.4=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
-base.5=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.6=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/cliente_mobile_dotnet_restfull/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+#Thu Jul 23 05:40:24 ECT 2026
+base.0=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+base.4=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.5=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+base.6=/home/gyro/Documents/ULTIMO_SEMESTRE/ARQUITECTURA/EUREKA_BANK/04.CLIMOV/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex
