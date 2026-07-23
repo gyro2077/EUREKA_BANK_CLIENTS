@@ -10,6 +10,24 @@ from eureka_cli.api.environment import ServerType, HostType, EnvironmentManager
 from eureka_cli.api.repository_factory import RepositoryFactory
 
 
+console = Console()
+
+
+def show_banner():
+    banner = """
+ ███████╗███████╗███████╗███╗   ███╗ █████╗ ██████╗ ██╗
+ ██╔════╝██╔════╝██╔════╝████╗ ████║██╔══██╗██╔══██╗██║
+ █████╗  ███████╗█████╗  ██╔████╔██║███████║██████╔╝██║
+ ██╔══╝  ╚════██║██╔══╝  ██║╚██╔╝██║██╔══██║██╔══██╗██║
+ ███████╗███████║███████╗██║ ╚═╝ ██║██║  ██║██║  ██║███████╗
+ ╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+    """
+    console.print(Align.center(banner, vertical="middle"), style="bold cyan")
+    console.print(Align.center("Sistema Core Bancario - Cliente CLI", style="bold white"))
+    console.print(Align.center("=" * 60, style="dim"))
+    console.print()
+
+
 def select_server():
     choices = [s.label for s in ServerType]
     answer = select("Seleccione el Backend:", choices=choices).ask()
